@@ -1,0 +1,29 @@
+// jsp
+
+/user
+    /index.html
+        #user-header             -- 页面跳转(home|search|shoppingcart|my)、登出
+
+        [mainFrame]
+            /home.html           -- 最新商品展示、搜索（index）
+            /search.html         -- 商品搜索
+            /goods.html          -- 商品详情、添加购物车、立即购买
+            /publisher.html      -- 发行商详情、商品列表  //整合到search
+            /shoppingcart.html   -- 移除、清空、付款
+            /my.html             -- 历史订单、足迹、个人资料+修改  
+            
+        #user-footer             -- 页面信息
+
+
+/pub
+    /index.html
+        #pub-header                 -- LOGO、登出
+
+            #pub-nav                -- mainFrame切换(goodslist|orderlist|creategoods|profile)
+            [mainFrame]
+                /goodslist.html     -- 商品列表、筛选（index）
+                /orderlist.html     -- 订单管理
+                /creategoods.html   -- 上架商品
+                /profile.html       -- 资料修改
+
+        #pub-footer                 -- 页面信息
